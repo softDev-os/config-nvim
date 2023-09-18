@@ -12,7 +12,7 @@ return {
       -- null_ls.formatting.deno_fmt,
       null_ls.builtins.formatting.stylua,
       -- null_ls.formatting.clang_format,
-      null_ls.builtins.formatting.prettier.with { filetypes = { "html", "markdown", "css" } },
+      null_ls.builtins.formatting.prettier,
     }
     return config -- return final config table
   end,

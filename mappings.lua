@@ -41,15 +41,14 @@ return {
       desc = "Previous buffer",
     },
   },
-  -- i = {
-  --
-  --   ["<C-h>"] = { "<Left>", "Move left" },
-  --   ["<C-l>"] = { "<Right>", "Move right" },
-  --   ["<C-j>"] = { "<Down>", "Move down" },
-  --   ["<C-k>"] = { "<Up>", "Move up" },
-  -- },
-  t = {
-    -- setting a mapping to false will disable it
+  i = {
+
+    ["<C-h>"] = { "<Left>" },
+    ["<C-l>"] = { "<Right>" },
+    ["<C-j>"] = { "<Down>" },
+    ["<C-k>"] = { "<Up>" },
+  },
+  t = { -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
 }

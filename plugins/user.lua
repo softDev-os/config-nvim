@@ -11,20 +11,10 @@ return {
   --   end,
   -- },
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
     event = "VeryLazy",
-  },
-  {
-    "Exafunction/codeium.vim",
-    event = "BufEnter",
   },
   {
     "Exafunction/codeium.vim",
@@ -35,6 +25,7 @@ return {
       vim.keymap.set("i", "<c-,>", function() return vim.fn["codeium#CycleCompletions"](-1) end, { expr = true })
       vim.keymap.set("i", "<c-x>", function() return vim.fn["codeium#Clear"]() end, { expr = true })
     end,
+    event = "BufEnter",
   },
   {
     "mg979/vim-visual-multi",
