@@ -47,6 +47,8 @@ return {
     ["<C-l>"] = { "<Right>" },
     ["<C-j>"] = { "<Down>" },
     ["<C-k>"] = { "<Up>" },
+    ["<C-b>"] = { "<ESC>^i" },
+    ["<C-e>"] = { "<End>" },
   },
   t = { -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
